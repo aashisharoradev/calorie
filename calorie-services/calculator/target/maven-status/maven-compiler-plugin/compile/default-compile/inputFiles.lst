@@ -1,0 +1,9 @@
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/annotations/DBTransaction.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/dao/HibernateDao.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/annotations/TransactionType.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/models/Food.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/App.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/resource/FoodResource.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/service/FoodService.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/aop/SessionAspect.java
+/Users/aashisharora/dev/technologies/calorie-counter/calorie-services/calculator/src/main/java/com/calculator/dao/FoodDao.java

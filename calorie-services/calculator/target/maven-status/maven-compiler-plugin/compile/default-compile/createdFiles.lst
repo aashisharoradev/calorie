@@ -1,0 +1,10 @@
+com/calculator/aop/SessionAspect.class
+com/calculator/annotations/TransactionType.class
+com/calculator/resource/FoodResource.class
+com/calculator/dao/HibernateDao.class
+com/calculator/annotations/DBTransaction.class
+com/calculator/dao/FoodDao.class
+com/calculator/aop/SessionAspect$1.class
+com/calculator/service/FoodService.class
+com/calculator/models/Food.class
+com/calculator/App.class

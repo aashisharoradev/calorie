@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "calorie-ui"
+		},
+		{
+			"path": "calorie-services"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"connectionTimeout": 30,
+				"database": "master",
+				"dialect": "MSSQL",
+				"name": "food",
+				"password": "F00dieData",
+				"port": 9033,
+				"server": "127.0.0.1",
+				"username": "sa"
+			}
+		]
+	}
+}
