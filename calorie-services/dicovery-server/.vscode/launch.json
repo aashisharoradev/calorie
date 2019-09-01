@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Application",
+            "request": "launch",
+            "mainClass": "discovery.eureka.service.Application",
+            "projectName": "eureka-service"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+version: "3.0"
+services:
+  db:
+    image: calorie-db-server
+    build: ./calorie-services/database
+    volumes:
+      - ./calorie-services/database:/calculator
+    ports:
+      - "9033:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=F00dieData
+    
+  discovery:
+    image: discovery-server
+    build: ./calorie-services/dicovery-server
+    volumes:
+      - ./calorie-services/dicovery-server:/discovery
+    ports:
+      - "8761:8761"
+    depends_on:
+      - calculator
+    entrypoint: ["/scripts/boot-discovery.sh"]
+  
+  calculator:
+    image: calculator-server
+    build: ./calorie-services/calculator
+    volumes:
+      - ./calorie-services/calculator:/calculator
+    ports:
+      - "8081:8081"
+    depends_on:
+      - db
+    entrypoint: ["/scripts/boot-calculator.sh"]
+    
+

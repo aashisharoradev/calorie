@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "calorie-services"
+		},
+		{
+			"path": "docker-compose.yml"
 		}
 	],
 	"settings": {
@@ -19,6 +22,7 @@
 				"server": "127.0.0.1",
 				"username": "sa"
 			}
-		]
+		],
+		"java.configuration.updateBuildConfiguration": "automatic"
 	}
 }
