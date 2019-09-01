@@ -1,6 +1,6 @@
-# Project Title
+# Calorie Calculator
 
-One Paragraph of project description goes here
+Project is used to display the number of calories in food item
 
 ## Getting Started
 docker-compose up -d
