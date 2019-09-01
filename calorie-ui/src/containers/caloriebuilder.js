@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Search from '../components/search/search';
+
 
 class CalorieBuilder extends Component {
     
@@ -13,18 +15,18 @@ class CalorieBuilder extends Component {
      * html is traversed rendering dom
      */
     componentDidMount() {
-        axios.get('http://localhost:8081/calculator/all/name').then(response => {
+        
+    }
+    searchString = (e) => {
+        axios.get('http://localhost:8081/calculator/all/' + e.target.value).then(response => {
             this.setState({ foods: response.data });
         });
-        axios.get('http://localhost:8761/eureka/apps/calorie-service').then(response => {
-            console.log(response.data);
-        });
-
     }
     render() {
         const foodList = this.state.foods.map(food => (<li key={food.foodId}>{food.foodId} : {food.foodName}</li>));
         return (
             <div>
+                <Search textSearch={this.searchString}/>
                 <ul>
                     {foodList}
                 </ul>

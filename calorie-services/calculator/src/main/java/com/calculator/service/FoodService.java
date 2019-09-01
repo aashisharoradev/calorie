@@ -14,6 +14,10 @@ public class FoodService {
     @Autowired
     private FoodDao foodDao;
 
+    public List<Food> findAllByExpression(String foodExp) {
+        return foodDao.findAllByName(foodExp, "foodName");
+    }
+
     public List<Food> findAll() {
         return foodDao.findAll();
     }
