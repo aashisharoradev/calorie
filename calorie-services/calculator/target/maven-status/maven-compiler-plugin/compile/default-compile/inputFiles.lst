@@ -1,0 +1,9 @@
+/calculator/src/main/java/com/calculator/service/FoodService.java
+/calculator/src/main/java/com/calculator/resource/FoodResource.java
+/calculator/src/main/java/com/calculator/dao/HibernateDao.java
+/calculator/src/main/java/com/calculator/annotations/TransactionType.java
+/calculator/src/main/java/com/calculator/models/Food.java
+/calculator/src/main/java/com/calculator/aop/SessionAspect.java
+/calculator/src/main/java/com/calculator/annotations/DBTransaction.java
+/calculator/src/main/java/com/calculator/App.java
+/calculator/src/main/java/com/calculator/dao/FoodDao.java

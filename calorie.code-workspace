@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "docker-compose.yml"
+		},
+		{
+			"path": "README.md"
 		}
 	],
 	"settings": {

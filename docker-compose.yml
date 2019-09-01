@@ -32,5 +32,16 @@ services:
     depends_on:
       - db
     entrypoint: ["/scripts/boot-calculator.sh"]
+  ui:
+    image: ui-server
+    build: ./calorie-ui/
+    volumes:
+      - ./calorie-ui:/ui
+    ports:
+      - "3000:3000"
+    depends_on:
+      - calculator
+      - discovery
+    entrypoint: ["/scripts/boot-ui.sh"]
     
 

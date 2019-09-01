@@ -1,1 +1,6 @@
-# calorie
+# Project Title
+
+One Paragraph of project description goes here
+
+## Getting Started
+docker-compose up -d
