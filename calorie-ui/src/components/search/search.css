@@ -1,0 +1,6 @@
+.listWidth {
+    width: 100%;
+    border: none;
+    overflow-y: auto;
+    height: 255px;
+}

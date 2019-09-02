@@ -10,26 +10,24 @@ class CalorieBuilder extends Component {
         foods: []
     }
 
-    /**
-     * this function part of react lifecycle hook, will be called when
-     * html is traversed rendering dom
-     */
-    componentDidMount() {
+    searchString = (e) => {
+        const value = e.target.value;
+        if (value === '' || value == null) {
+            this.setState({ foods: [] });
+        } else { 
+            axios.get('http://localhost:8081/calculator/all/' + e.target.value).then(response => {
+            this.setState({ foods: response.data });
+            }).catch(err => { 
+                this.setState({ foods: [] });
+            });
+        }
         
     }
-    searchString = (e) => {
-        axios.get('http://localhost:8081/calculator/all/' + e.target.value).then(response => {
-            this.setState({ foods: response.data });
-        });
-    }
     render() {
-        const foodList = this.state.foods.map(food => (<li key={food.foodId}>{food.foodId} : {food.foodName}</li>));
         return (
-            <div>
-                <Search textSearch={this.searchString}/>
-                <ul>
-                    {foodList}
-                </ul>
+            <div className="jumbotron">
+                <h3>Enter Food Name</h3>
+                <Search textSearch={this.searchString} foods={this.state.foods} />
             </div>
         );
         
